@@ -18,7 +18,7 @@ const MODE_DATA: Record<ModeKey, ModeData> = {
     label: "Protein Powders",
     subtitle: "Batching, blending, and sieve checks in one transparent line.",
     image:
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80",
+      "https://images.pexels.com/photos/13779116/pexels-photo-13779116.jpeg?auto=compress&cs=tinysrgb&w=1400",
     stats: [
       { label: "Source checks", value: "3 stage", x: "8%", y: "16%" },
       { label: "Blend audit", value: "Every lot", x: "76%", y: "10%" },
@@ -30,7 +30,7 @@ const MODE_DATA: Record<ModeKey, ModeData> = {
     label: "Protein Bars",
     subtitle: "Roast-to-wrap flow with visible ingredient checkpoints.",
     image:
-      "https://images.pexels.com/photos/3735709/pexels-photo-3735709.jpeg",
+      "https://images.pexels.com/photos/14513406/pexels-photo-14513406.jpeg?auto=compress&cs=tinysrgb&w=1400",
     stats: [
       { label: "Roast control", value: "Temp tracked", x: "10%", y: "14%" },
       { label: "Bind ratio", value: "Calibrated", x: "78%", y: "12%" },
@@ -119,11 +119,8 @@ export default function TransparencyLabSection() {
                     alt={data.label}
                     width={1400}
                     height={920}
-                    className="h-[280px] w-full rounded-[18px] object-cover md:h-[360px]"
+                    className="h-[280px] w-full rounded-[18px] bg-[#ece3d6] object-contain md:h-[360px]"
                   />
-
-                  <div className="orbit-ring orbit-ring-one" />
-                  <div className="orbit-ring orbit-ring-two" />
 
                   {data.stats.map((stat) => (
                     <motion.div

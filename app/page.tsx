@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import PremiumFooter from "@/components/PremiumFooter";
 import CommunitySection from "@/components/CommunitySection";
 import PeopleLoveSection from "@/components/PeopleLoveSection";
+import SignalCharacterSection from "@/components/SignalCharacterSection";
 import TransparencyLabSection from "@/components/TransparencyLabSection";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <StorySections />
+      <SignalCharacterSection />
       <TransparencyLabSection />
       <PeopleLoveSection />
       <CommunitySection />
